@@ -19,11 +19,11 @@
   --white_a8: hsla(0, 0%, 100%, 0.08);
   --white_a12: hsla(0, 0%, 100%, 0.12);
   --cultured: hsla(220, 20%, 97%, 1);
-  --snow: hsla(345, 57%, 97%, 1);
-  --manatee: hsla(219, 10%, 62%, 1);
+  --snow: #fcf3f5;
+  --manatee: #949ba8;
   --black-coral: hsla(220, 12%, 43%, 1);
   --cadet-blue-crayola_a20: hsla(222, 23%, 71%, 0.2);
-  --cinnamon-satin: hsla(344, 53%, 62%, 1);
+  --cinnamon-satin: #d16b86;
   --raisin-black: hsla(216, 14%, 14%, 1);
   --raisin-black_a6: hsla(216, 14%, 14%, 0.06);
   --gunmetal: hsla(214, 15%, 21%, 1);
@@ -409,40 +409,60 @@ body.nav-active { overflow: hidden; }
 /*-----------------------------------*\
   #ABOUT
 \*-----------------------------------*/
-
 .about .wrapper {
   display: grid;
   gap: 10px;
   margin-block-end: 70px;
 }
 
-.progress-list .label-wrapper {
+.about-card {
+  text-align: center;
+  background-color: #f1ebf5;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  height: 100%;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-block-end: 4px;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 320px;
 }
 
-.progress-item:not(:last-child) { margin-block-end: 16px; }
-
-.progress {
-  background-color: var(--raisin-black_a6);
-  height: 6px;
-  width: 100%;
-  border-radius: var(--radius-pill);
-  overflow: hidden;
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
 }
-
-.progress-fill { height: inherit; }
-
-.about-card { text-align: center; }
 
 .about-card .card-icon {
   max-width: max-content;
   margin-inline: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-.about-card .card-title { margin-block: 16px 10px; }
+.about-card .card-title {
+  margin-block: 0 10px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.about-card .card-text {
+  font-size: 0.98em;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Make sure the list also looks like a grid */
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -460,9 +480,10 @@ body.nav-active { overflow: hidden; }
 
 .tech-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
   gap: 1.5rem;
   justify-items: center;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .tech-item {
@@ -471,23 +492,28 @@ body.nav-active { overflow: hidden; }
   align-items: center;
   width: 100%;
   padding: 1rem;
-  border-radius: 8px;
-  transition: all 0.2s ease;
-  background-color: hsl(var(--hue), 80%, 95%);
+  border-radius: 10px;
+  background-color: #f1ebf5;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease-in-out forwards;
+  opacity: 0;
 }
 
 .tech-item:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transform: translateY(-6px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .tech-icon {
   width: 48px;
   height: 48px;
+  padding: 8px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.75rem;
+  transition: background-color 0.3s;
 }
 
 .tech-icon img {
@@ -497,199 +523,42 @@ body.nav-active { overflow: hidden; }
 }
 
 .tech-name {
-  font-size: 0.9rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   color: #2d3748;
   text-align: center;
 }
 
+/* Mobile responsiveness */
 @media (max-width: 768px) {
   .tech-grid {
-    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
     gap: 1rem;
   }
-  
+
   .tech-icon {
-    width: 36px;
-    height: 36px;
+    width: 32px;
+    height: 32px;
+    padding: 6px;
   }
-  
+
   .tech-name {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
   }
 }
 
-/* Tech Stack Section Styles
-.tech-stack-section {
-  padding: 5rem 2rem;
-  background: var(--white);
-  position: relative;
-  overflow: hidden;
-}
-
-.tech-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 2;
-}
-
-.section-title {
-  font-size: var(--fs-2);
-  color: var(--charcoal);
-  margin-bottom: 1rem;
-  font-weight: var(--fw-700);
-}
-
-.section-subtitle {
-  font-size: var(--fs-5);
-  color: var(--manatee);
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.tech-grid {
-  display: grid;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-.tech-category {
-  background: var(--cultured);
-  border-radius: var(--radius-8);
-  padding: 1.5rem;
-  box-shadow: var(--shadow-1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.tech-category:hover {
-  transform: translateY(-5px);
-  box-shadow: var(--shadow-2);
-}
-
-.category-label {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--white_a12);
-}
-
-.category-icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--cinnamon-satin);
-}
-
-.tech-category h3 {
-  font-size: var(--fs-4);
-  color: var(--charcoal);
-  margin: 0;
-}
-
-.tech-items {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr));
-  gap: 1rem;
-}
-
-.tech-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 1rem;
-  border-radius: var(--radius-6);
-  background: var(--white);
-  transition: all 0.3s ease;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-}
-
-.tech-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.tech-logo {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-
-.tech-logo img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  filter: grayscale(20%);
-  transition: filter 0.3s ease;
-}
-
-.tech-card:hover .tech-logo img {
-  filter: grayscale(0%);
-}
-
-.tech-name {
-  font-size: var(--fs-8);
-  font-weight: var(--fw-700);
-  color: var(--charcoal);
-  text-align: center;
-}
-
-.tech-wave {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: linear-gradient(90deg, var(--cinnamon-satin), var(--charcoal));
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform 0.3s ease;
-}
-
-.tech-card:hover .tech-wave {
-  transform: scaleX(1);
-}
-
-/* Background elements */
-/*
-.tech-stack-section::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, var(--white_a8) 0%, transparent 70%);
-  z-index: 1;
-}
-
-@media (min-width: 768px) {
-  .tech-grid {
-    grid-template-columns: repeat(2, 1fr);
+/* Animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-@media (min-width: 992px) {
-  .tech-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  
-  .tech-items {
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-  }
-}
-
-/* Animation classes */
-/*
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -701,15 +570,9 @@ body.nav-active { overflow: hidden; }
   }
 }
 
-.tech-category {
-  animation: fadeInUp 0.6s ease forwards;
-  opacity: 0;
+.tech-item:nth-child(n) {
+  animation-delay: calc(0.05s * var(--i));
 }
-
-.tech-category:nth-child(1) { animation-delay: 0.1s; }
-.tech-category:nth-child(2) { animation-delay: 0.2s; }
-.tech-category:nth-child(3) { animation-delay: 0.3s; }
-.tech-category:nth-child(4) { animation-delay: 0.4s; } */
 
 /*-----------------------------------*\
   #PROJECTS

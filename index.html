@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Ritika.me</title>
+  <meta name="title" content="Julia - I'm User Interface Designer & Developer.">
+  <meta name="description" content="This is a personal portfolio html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.jpg">
+  <link rel="preload" as="image" href="./assets/images/Blog.svg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/name-logo.png" width="94" height="14" alt="Ritika home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/name-logo.png" width="64" height="24" alt="Julia home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Home</a>
+          </li>
+
+          <li>
+            <a href="#About" class="navbar-link">About</a>
+          </li>
+
+          <li>
+            <a href="#projects" class="navbar-link">Projects</a>
+          </li>
+
+          <li>
+            <a href="#designs" class="navbar-link">Designs</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="jainritikaa05@gmail.com" class="contact-link">jainritikaa05@gmail.com</a>
+
+          <a href="tel:001234567890" class="contact-link">+91 </a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://x.com/jainritikaa05" class="social-link" target="_blank">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/jainritikaaa/" class="social-link" target="_blank">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://github.com/jainritikaa" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.linkedin.com/in/jainritikaa" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="home">
+        <div class="container">
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.-2.jpg" width="360" height="540" alt="Julia" class="w-100"
+              data-reveal="top">
+          </figure>
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" data-reveal="top" data-reveal-delay="0.5s">
+              I'm a Full Stack Web Developer & Designer.
+            </h1>
+
+            <p class="section-text" data-reveal="top" data-reveal-delay="0.75s">
+              Hello! I'm Ritika — a freelance Full Stack Developer & UI/UX Designer based in India.
+              <br> I am Passionate about building intuitive interfaces and scalable solutions that blend aesthetics with
+              functionality.
+            </p>
+
+            <div class="btn-wrapper" data-reveal="top" data-reveal-delay="1s">
+              <a href="#projects" class="btn btn-primary">See My Works</a>
+
+              <a href="https://drive.google.com/file/d/1C498wd2nUocd_t1MjYIolkRkCw1A-Xat/view?usp=drive_link"
+                class="btn btn-secondary">See My Resume</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+      <section id="About" class="section about" aria-label="about">
+        <div class="container">
+
+          <div class="wrapper">
+
+            <div data-reveal="left">
+              <h2 class="h2 section-title">What I Do?</h2>
+
+              <p class="section-text">
+                Driven by curiosity and a passion for technology, I thrive at the intersection of design, development,
+                and problem-solving. With a focus on building intuitive user experiences and scalable systems, I
+                continuously seek to grow through collaboration and innovation. My journey is fueled by a desire to
+                create impactful digital solutions that empower users and make a difference.
+              </p>
+            </div>
+
+            <div class="container">
+              <h1 class="title">Tech Stack</h1>
+              
+              <div class="tech-grid">
+                <!-- Programming Languages -->
+                <div class="tech-item" style="--hue: 0;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++">
+                  </div>
+                  <span class="tech-name">C++</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 30;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                  </div>
+                  <span class="tech-name">Java</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 60;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                  </div>
+                  <span class="tech-name">Python</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 210;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                  </div>
+                  <span class="tech-name">JavaScript</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 220;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
+                  </div>
+                  <span class="tech-name">TypeScript</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 270;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                  </div>
+                  <span class="tech-name">PHP</span>
+                </div>
+                
+                <!-- Web Development -->
+                <div class="tech-item" style="--hue: 180;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                  </div>
+                  <span class="tech-name">HTML5</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 200;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                  </div>
+                  <span class="tech-name">CSS3</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 190;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                  </div>
+                  <span class="tech-name">React</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 195;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React Native">
+                  </div>
+                  <span class="tech-name">React Native</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 120;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                  </div>
+                  <span class="tech-name">Node.js</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 130;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express">
+                  </div>
+                  <span class="tech-name">Express</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 170;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js">
+                  </div>
+                  <span class="tech-name">Next.js</span>
+                </div>
+                
+                
+                
+                <!-- Databases -->
+                <div class="tech-item" style="--hue: 140;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB">
+                  </div>
+                  <span class="tech-name">MongoDB</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 150;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                  </div>
+                  <span class="tech-name">MySQL</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 145;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
+                  </div>
+                  <span class="tech-name">SQL</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 35;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase">
+                  </div>
+                  <span class="tech-name">Firebase</span>
+                </div>
+                
+                <!-- Tools & Platforms -->
+                <div class="tech-item" style="--hue: 10;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                  </div>
+                  <span class="tech-name">Git</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 250;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                  </div>
+                  <span class="tech-name">GitHub</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 300;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                  </div>
+                  <span class="tech-name">Linux</span>
+                </div>
+                
+                <!-- Data Science -->
+                <div class="tech-item" style="--hue: 5;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow">
+                  </div>
+                  <span class="tech-name">TensorFlow</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 25;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" alt="PyTorch">
+                  </div>
+                  <span class="tech-name">PyTorch</span>
+                </div>
+                
+                <!-- Design -->
+                <div class="tech-item" style="--hue: 330;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                  </div>
+                  <span class="tech-name">Figma</span>
+                </div>
+                
+                <div class="tech-item" style="--hue: 340;">
+                  <div class="tech-icon">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva">
+                  </div>
+                  <span class="tech-name">Canva</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <ul class="grid-list">
+
+            <li data-reveal="bottom">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-1.svg" width="52" height="52" loading="lazy" alt="web design icon">
+                </div>
+
+                <h3 class="h4 card-title">Web Development</h3>
+
+                <p class="card-text">
+                  Experienced in designing and developing dynamic, user-friendly web applications with a strong focus on performance and accessibility. Adept at transforming complex requirements into intuitive and engaging digital experiences.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.25s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-2.svg" width="52" height="52" loading="lazy" alt="mobile design icon">
+                </div>
+
+                <h3 class="h4 card-title">App Development</h3>
+
+                <p class="card-text">
+                  Developed cross-platform mobile applications with a focus on smooth user experience and rapid deployment, leveraging modern frameworks to streamline the development process.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.5s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-3.svg" width="52" height="52" loading="lazy"
+                    alt="web development icon">
+                </div>
+
+                <h3 class="h4 card-title">Data Structures and Algorithm</h3>
+
+                <p class="card-text">
+                  Strong in Data Structures and Algorithms, with experience in solving complex problems and optimizing solutions. Led projects involving algorithm-based problem-solving and advanced data structures.
+                </p>
+
+              </div>
+            </li>
+
+            <li data-reveal="bottom" data-reveal-delay="0.75s">
+              <div class="about-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/icon-4.svg" width="52" height="52" loading="lazy" alt="web seo icon">
+                </div>
+
+                <h3 class="h4 card-title">Design</h3>
+
+                <p class="card-text">
+                  Skilled in creating visually appealing designs and presentations using Canva for professional and academic projects.
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+    
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section id="projects" class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <div class="title-wrapper" data-reveal="top">
+
+            <div>
+              <h2 class="h2 section-title" id="project-label">Latest Projects</h2>
+
+              <p class="section-text">
+                Check out some of my latest projects with creative ideas.
+              </p>
+            </div>
+
+            <a href="https://github.com/jainritikaa" class="btn btn-secondary">See All Projects</a>
+
+          </div>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card project-card-1" style="background-color: #f8f5fb">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class="card-tag" style="color: #4f5758">React + Node </p>
+
+                  <h3 class="h3 card-title">WORA</h3>
+
+                  <p class="card-text">
+                    AI-powered content tool for creators and students. Built on Vertex AI, Wora adapts, edits, and
+                    personalizes content for any platform—effortlessly, in one click.
+                  </p>
+
+                  <a href="https://mrigank118.github.io/Wora-v1/" class="btn-text" style="color: #4f5755">
+                    <span class="span">See Project</span>
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/woraV1_Preview_2.png" width="750" height="470" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-2" style="background-color: #ffeffd">
+
+                <div class="card-content" data-reveal="right">
+
+                  <p class=" card-tag" style="color: #ca0c91">React Native App </p>
+
+                  <h3 class="h3 card-title">SafeHer - Women Safety </h3>
+
+                  <p class="card-text">
+                    AI-powered safety companion built in React Native. Detects emergencies, sends SOS via codeword, and
+                    alerts trusted contacts and nearby users for swift support.
+
+                  </p>
+
+                  <a href="https://safeher-mu.vercel.app/" class="btn-text" style="color: #ca0c91">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="left">
+                  <img src="./assets/images/safeHerPreview-removebg-preview.png" width="700" height="367" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-3" style="background-color: #eaf6ff">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #09466e">Python & AIML</p>
+
+                  <h3 class="h3 card-title">YoloV5 Material Detector</h3>
+
+                  <p class="card-text">
+                    Using YoloV5 to Detect and Identify the Type of Material in categoires like Plastic, Metal, Paper
+                    etc. Helpful and efficient Waste segregation.
+                  </p>
+
+                  <a href="https://github.com/Mrigank118/yolo-waste-detection" class="btn-text" style="color: #09466e">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/yolo_waste_detection.png" width="600" height="367" loading="lazy"
+                    alt="Web Design" class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card project-card-4" style="background-color: #fff5f5">
+
+                <div class="card-content" data-reveal="left">
+
+                  <p class=" card-tag" style="color: #ff615b">Tensorflow, Python & Streamlit</p>
+
+                  <h3 class="h3 card-title">AI Fraud Detection</h3>
+
+                  <p class="card-text">
+                    The Adaptive AI Fraud Prevention System is a comprehensive and scalable solution that identifies and
+                    mitigate fraudulent activities in the insurance lifecycle.
+                  </p>
+
+                  <a href="https://github.com/jainritikaa/adaptive-ai-fraud-prevention" class="btn-text"
+                    style="color: #ff615b">
+                    <span class="span">See Project</span>
+
+                    <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                  </a>
+
+                </div>
+
+                <figure class="card-banner" data-reveal="right">
+                  <img src="./assets/images/fraudsphere.png" width="620" height="370" loading="lazy" alt="Mobile Design"
+                    class="w-100">
+                </figure>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section id="designs" class="section design-portfolio" aria-label="Design Portfolio">
+        <div class="container">
+
+          <h2 class="h2 section-title">Creative Space</h2>
+          <p class="section-text">
+            A curated glimpse into my world of visual storytelling — from Photoshop manipulations and Canva creations
+            for freelancing, to bold and expressive T-shirt designs. Each piece is a reflection of imagination turned
+            into impact.
+          </p>
+
+          <div class="design-grid">
+            <div class="design-tile">
+              <img src="./assets/images/design_01.png" alt="Design 1" class="design-image">
+            </div>
+
+            <div class="design-tile">
+              <img src="./assets/images/design_02.png" alt="Design 2" class="design-image">
+            </div>
+
+            <div class="design-tile">
+              <img src="./assets/images/design_03.png" alt="Design 3" class="design-image">
+            </div>
+
+            <div class="design-tile">
+              <img src="./assets/images/design_06.png" alt="Design 4" class="design-image">
+            </div>
+
+            <div class="design-tile">
+              <img src="./assets/images/design_07.png" alt="Design 5" class="design-image">
+            </div>
+
+            <div class="design-tile">
+              <img src="./assets/images/design_04.png" alt="Design 6" class="design-image">
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        © 2025 Ritika Jain . All rights reserved.
+      </p>
+
+      <ul class="social-list">
+
+        <li>
+          <a href="https://x.com/jainritikaa05" class="social-link" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/jainritikaaa/" class="social-link" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://github.com/jainritikaa" class="social-link" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+
+        <li>
+          <a href="https://www.linkedin.com/in/jainritikaa" class="social-link" target="_blank">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
